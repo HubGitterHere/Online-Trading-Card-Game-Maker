@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://85btgcqdsju6"]
+
+[ext_resource type="StyleBox" uid="uid://d20i0c2eyceuo" path="res://Button Presets/NormalButton.tres" id="1_4lkhp"]
+[ext_resource type="Script" uid="uid://cajvrxrlyk2dr" path="res://buttons/ChangeScreenButton.gd" id="1_x6hve"]
+[ext_resource type="StyleBox" uid="uid://besn1w0ux4a3f" path="res://Button Presets/PressedButton.tres" id="2_ocm0i"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8mq0e"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_oflt7"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oflt7"]
+
+[node name="Template" type="VBoxContainer" unique_id=1726529570]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="." unique_id=1538606271]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+
+[node name="Label" type="Label" parent="HBoxContainer2" unique_id=2059093919]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mq0e")
+text = "Page Label"
+label_settings = SubResource("LabelSettings_oflt7")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="HBoxContainer2" unique_id=498889244]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+theme_override_styles/normal = ExtResource("1_4lkhp")
+theme_override_styles/pressed = ExtResource("2_ocm0i")
+theme_override_styles/hover = ExtResource("2_ocm0i")
+text = "Return to Main Menu"
+script = ExtResource("1_x6hve")
+destination_scene = "uid://belcqql0bjwlc"
+
+[node name="Container" type="Control" parent="." unique_id=323946910]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="Container" unique_id=969610856]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_oflt7")
+
+[connection signal="button_down" from="HBoxContainer2/Button" to="HBoxContainer2/Button" method="_on_button_down"]

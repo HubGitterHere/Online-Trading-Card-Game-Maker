@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bjlya1erer8fc"]
+
+[ext_resource type="Texture2D" uid="uid://cjiwd5hqppocv" path="res://Placeholder Images/Arrow.png" id="1_htb4h"]
+
+[node name="Arrow Button" type="TextureButton" unique_id=687549197]
+offset_left = 406.0
+offset_top = 34.0
+offset_right = 507.0
+offset_bottom = 151.0
+texture_normal = ExtResource("1_htb4h")
+texture_pressed = ExtResource("1_htb4h")
+texture_hover = ExtResource("1_htb4h")

@@ -1,0 +1,184 @@
+[gd_scene format=3 uid="uid://5d63r65rs7ta"]
+
+[ext_resource type="PackedScene" uid="uid://85btgcqdsju6" path="res://Pages/Template.tscn" id="1_g48c4"]
+[ext_resource type="Script" uid="uid://di5e0fx4qlrg" path="res://Pages/CardBase.gd" id="2_ulugt"]
+[ext_resource type="Texture2D" uid="uid://c8uoj5aru8fb5" path="res://Placeholder Images/Card Zone.png" id="3_bygyg"]
+[ext_resource type="Script" uid="uid://ddsm2h5osjux8" path="res://Pages/CardPart.gd" id="4_me826"]
+[ext_resource type="PackedScene" uid="uid://caycl1egy3av5" path="res://buttons/ChangePageButton.tscn" id="5_ulugt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5g74a"]
+bg_color = Color(0.52156866, 1, 1, 1)
+
+[node name="Game Editor Page" unique_id=1726529570 instance=ExtResource("1_g48c4")]
+
+[node name="Label" parent="HBoxContainer2" parent_id_path=PackedInt32Array(1538606271) index="0" unique_id=2059093919]
+text = "Game Editor"
+
+[node name="Panel" parent="Container" parent_id_path=PackedInt32Array(323946910) index="0" unique_id=969610856]
+theme_override_styles/panel = SubResource("StyleBoxFlat_5g74a")
+
+[node name="Container" type="Control" parent="Container/Panel" index="0" unique_id=1409629310]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_ulugt")
+
+[node name="Player Unit Zone" type="TextureRect" parent="Container/Panel/Container" index="0" unique_id=255547671]
+layout_mode = 0
+offset_left = 325.0
+offset_top = 308.00003
+offset_right = 475.0
+offset_bottom = 558.0
+scale = Vector2(0.62666667, 0.62)
+texture = ExtResource("3_bygyg")
+script = ExtResource("4_me826")
+
+[node name="Label" type="Label" parent="Container/Panel/Container/Player Unit Zone" index="0" unique_id=643274249]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Unit
+Zone"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Player Discard Zone" type="TextureRect" parent="Container/Panel/Container" index="1" unique_id=161833519]
+layout_mode = 0
+offset_left = 138.0
+offset_top = 308.00003
+offset_right = 288.0
+offset_bottom = 558.0
+scale = Vector2(0.62666667, 0.62)
+texture = ExtResource("3_bygyg")
+script = ExtResource("4_me826")
+
+[node name="Label" type="Label" parent="Container/Panel/Container/Player Discard Zone" index="0" unique_id=1868057957]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Discard
+Zone"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Player Unit Zone2" type="TextureRect" parent="Container/Panel/Container" index="2" unique_id=922602306]
+layout_mode = 0
+offset_left = 431.0
+offset_top = 308.00003
+offset_right = 581.0
+offset_bottom = 558.0
+scale = Vector2(0.62666667, 0.62)
+texture = ExtResource("3_bygyg")
+script = ExtResource("4_me826")
+
+[node name="Label" type="Label" parent="Container/Panel/Container/Player Unit Zone2" index="0" unique_id=1511277942]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Unit
+Zone"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Player Unit Zone3" type="TextureRect" parent="Container/Panel/Container" index="3" unique_id=2039327531]
+layout_mode = 0
+offset_left = 545.0
+offset_top = 306.00003
+offset_right = 695.0
+offset_bottom = 556.0
+scale = Vector2(0.62666667, 0.62)
+texture = ExtResource("3_bygyg")
+script = ExtResource("4_me826")
+
+[node name="Label" type="Label" parent="Container/Panel/Container/Player Unit Zone3" index="0" unique_id=910246306]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Unit
+Zone"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Player Unit Zone4" type="TextureRect" parent="Container/Panel/Container" index="4" unique_id=795391131]
+layout_mode = 0
+offset_left = 657.0
+offset_top = 307.0
+offset_right = 807.0
+offset_bottom = 557.0
+scale = Vector2(0.62666667, 0.62)
+texture = ExtResource("3_bygyg")
+script = ExtResource("4_me826")
+
+[node name="Label" type="Label" parent="Container/Panel/Container/Player Unit Zone4" index="0" unique_id=519059343]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Unit
+Zone"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Player Deck Zone" type="TextureRect" parent="Container/Panel/Container" index="5" unique_id=1268370697]
+layout_mode = 0
+offset_left = 831.0
+offset_top = 305.0
+offset_right = 981.0
+offset_bottom = 555.0
+scale = Vector2(0.62666667, 0.62)
+texture = ExtResource("3_bygyg")
+script = ExtResource("4_me826")
+
+[node name="Label" type="Label" parent="Container/Panel/Container/Player Deck Zone" index="0" unique_id=425240888]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Deck
+Zone"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Change Page Button" parent="Container/Panel" index="1" unique_id=1255950899 instance=ExtResource("5_ulugt")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 985.0
+offset_top = 8.0
+offset_right = 1136.0
+offset_bottom = 71.0
+grow_horizontal = 1
+grow_vertical = 1
+text = "Test Game"
+destination_scene = "uid://cge43vi6vebg4"
+
+[node name="Label" type="Label" parent="Container" parent_id_path=PackedInt32Array(323946910) index="1" unique_id=132048841]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 73.0
+offset_right = 787.0
+offset_bottom = 130.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Click and Drag the zones below to move them around"
+horizontal_alignment = 1
+vertical_alignment = 1

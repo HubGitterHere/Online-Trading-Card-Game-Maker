@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://db2r07a1ee8bg"]
+
+[ext_resource type="PackedScene" uid="uid://85btgcqdsju6" path="res://Pages/Template.tscn" id="1_mpyle"]
+[ext_resource type="Texture2D" uid="uid://c7y47nls3tvy8" path="res://Placeholder Images/PikachuJungle60.jpg" id="2_6bply"]
+[ext_resource type="Script" uid="uid://di5e0fx4qlrg" path="res://Pages/CardBase.gd" id="3_tcrtu"]
+[ext_resource type="Script" uid="uid://7njkxqlmfs6r" path="res://buttons/ChangeArtButton.gd" id="4_57t1l"]
+[ext_resource type="Texture2D" uid="uid://dpfpjjbx0bpm8" path="res://Placeholder Images/CharizardBestCDPromo.jpg" id="5_v7i6e"]
+[ext_resource type="Script" uid="uid://ddsm2h5osjux8" path="res://Pages/CardPart.gd" id="6_mpyle"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gtr6f"]
+bg_color = Color(0.52156866, 1, 1, 1)
+
+[node name="Template" unique_id=1726529570 instance=ExtResource("1_mpyle")]
+
+[node name="Label" parent="HBoxContainer2" parent_id_path=PackedInt32Array(1538606271) index="0" unique_id=2059093919]
+text = "Card Maker"
+
+[node name="Panel" parent="Container" parent_id_path=PackedInt32Array(323946910) index="0" unique_id=969610856]
+theme_override_styles/panel = SubResource("StyleBoxFlat_gtr6f")
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Container" parent_id_path=PackedInt32Array(323946910) index="1" unique_id=248780899]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 145.0
+offset_right = 482.0
+offset_bottom = 729.0
+scale = Vector2(0.5, 0.5)
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.4
+
+[node name="TextureRect" type="TextureRect" parent="Container/HBoxContainer" index="0" unique_id=1567775130]
+layout_mode = 2
+texture = ExtResource("2_6bply")
+script = ExtResource("3_tcrtu")
+
+[node name="Button" type="Button" parent="Container/HBoxContainer" index="1" unique_id=2110506817]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Upload New Art"
+script = ExtResource("4_57t1l")
+charizard_best_cd_promo = ExtResource("5_v7i6e")
+pikachu_jungle_60 = ExtResource("2_6bply")
+
+[node name="Vboxcontainer" type="VBoxContainer" parent="Container" parent_id_path=PackedInt32Array(323946910) index="2" unique_id=2141096789]
+layout_mode = 0
+offset_left = 755.0
+offset_top = 96.0
+offset_right = 902.0
+offset_bottom = 236.0
+
+[node name="Label" type="Label" parent="Container/Vboxcontainer" index="0" unique_id=1495387838]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Stats"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Container/Vboxcontainer" index="1" unique_id=1581776180]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container/Vboxcontainer/ScrollContainer" index="0" unique_id=1654201207]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("3_tcrtu")
+
+[node name="Health" type="Button" parent="Container/Vboxcontainer/ScrollContainer/VBoxContainer" index="0" unique_id=290415333]
+layout_mode = 2
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.0
+text = "Health: 10"
+script = ExtResource("6_mpyle")
+
+[node name="Attack" type="Button" parent="Container/Vboxcontainer/ScrollContainer/VBoxContainer" index="1" unique_id=899444195]
+layout_mode = 2
+text = "Attack: 5"
+script = ExtResource("6_mpyle")
+
+[node name="Attack2" type="Button" parent="Container/Vboxcontainer/ScrollContainer/VBoxContainer" index="2" unique_id=1015046461]
+layout_mode = 2
+text = "Attack: 500"
+script = ExtResource("6_mpyle")
+
+[node name="Defense" type="Button" parent="Container/Vboxcontainer/ScrollContainer/VBoxContainer" index="3" unique_id=1021400041]
+layout_mode = 2
+text = "Defense: 5"
+script = ExtResource("6_mpyle")
+
+[node name="Defense2" type="Button" parent="Container/Vboxcontainer/ScrollContainer/VBoxContainer" index="4" unique_id=1774095579]
+layout_mode = 2
+text = "Defense: 200"
+script = ExtResource("6_mpyle")
+
+[node name="Label" type="Label" parent="Container" parent_id_path=PackedInt32Array(323946910) index="3" unique_id=812322062]
+layout_mode = 0
+offset_left = 609.0
+offset_top = 326.0
+offset_right = 898.0
+offset_bottom = 417.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Drag and drop stats onto the card"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="button_down" from="Container/HBoxContainer/Button" to="Container/HBoxContainer/Button" method="_on_button_down"]

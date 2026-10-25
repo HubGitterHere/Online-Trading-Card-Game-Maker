@@ -1,0 +1,339 @@
+[gd_scene format=3 uid="uid://cge43vi6vebg4"]
+
+[ext_resource type="PackedScene" uid="uid://85btgcqdsju6" path="res://Pages/Template.tscn" id="1_2c5vs"]
+[ext_resource type="Texture2D" uid="uid://c8uoj5aru8fb5" path="res://Placeholder Images/Card Zone.png" id="2_vrjre"]
+[ext_resource type="Texture2D" uid="uid://cgdwrb5is3whd" path="res://Placeholder Images/BlueEyesWhiteDragon-OP28-EN-UtR-UE.png" id="3_2ylar"]
+[ext_resource type="Texture2D" uid="uid://bl5xkebg66ed8" path="res://Placeholder Images/300px-Kuriboh-MRD-EN-SR-UE-25thAnniversaryEdition.png" id="4_2ylar"]
+[ext_resource type="Texture2D" uid="uid://cq2thswabaxu" path="res://Placeholder Images/DarkMagician-TN23-EN-QCScR-LE.png" id="5_24kln"]
+[ext_resource type="Script" uid="uid://cha6mtilfpu67" path="res://Pages/PlayCard.gd" id="5_qgfnd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4thjs"]
+bg_color = Color(0.54901963, 1, 0.54901963, 1)
+
+[node name="Template" unique_id=1726529570 instance=ExtResource("1_2c5vs")]
+
+[node name="Label" parent="HBoxContainer2" parent_id_path=PackedInt32Array(1538606271) index="0" unique_id=2059093919]
+text = "Game Player"
+
+[node name="Panel" parent="Container" parent_id_path=PackedInt32Array(323946910) index="0" unique_id=969610856]
+theme_override_styles/panel = SubResource("StyleBoxFlat_4thjs")
+
+[node name="Player Discard Zone" type="TextureRect" parent="Container" parent_id_path=PackedInt32Array(323946910) index="1" unique_id=358282187]
+layout_mode = 0
+offset_left = 143.0
+offset_top = 276.00003
+offset_right = 293.0
+offset_bottom = 526.0
+scale = Vector2(0.62666667, 0.62)
+texture = ExtResource("2_vrjre")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container/Player Discard Zone" index="0" unique_id=478101391]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Discard
+Zone"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Player Unit Zone" type="TextureRect" parent="Container" parent_id_path=PackedInt32Array(323946910) index="2" unique_id=2108909487]
+layout_mode = 0
+offset_left = 330.0
+offset_top = 276.00003
+offset_right = 480.0
+offset_bottom = 526.0
+scale = Vector2(0.62666667, 0.62)
+texture = ExtResource("2_vrjre")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container/Player Unit Zone" index="0" unique_id=251005234]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Unit
+Zone"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Player Unit Zone2" type="TextureRect" parent="Container" parent_id_path=PackedInt32Array(323946910) index="3" unique_id=599570187]
+layout_mode = 0
+offset_left = 436.0
+offset_top = 276.00003
+offset_right = 586.0
+offset_bottom = 526.0
+scale = Vector2(0.62666667, 0.62)
+texture = ExtResource("2_vrjre")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container/Player Unit Zone2" index="0" unique_id=1402084169]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Unit
+Zone"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Player Unit Zone3" type="TextureRect" parent="Container" parent_id_path=PackedInt32Array(323946910) index="4" unique_id=327729782]
+layout_mode = 0
+offset_left = 550.0
+offset_top = 274.00003
+offset_right = 700.0
+offset_bottom = 524.0
+scale = Vector2(0.62666667, 0.62)
+texture = ExtResource("2_vrjre")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container/Player Unit Zone3" index="0" unique_id=979706187]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Unit
+Zone"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Player Unit Zone4" type="TextureRect" parent="Container" parent_id_path=PackedInt32Array(323946910) index="5" unique_id=2068285994]
+layout_mode = 0
+offset_left = 662.0
+offset_top = 275.0
+offset_right = 812.0
+offset_bottom = 525.0
+scale = Vector2(0.62666667, 0.62)
+texture = ExtResource("2_vrjre")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container/Player Unit Zone4" index="0" unique_id=685460857]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Unit
+Zone"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Player Deck Zone" type="TextureRect" parent="Container" parent_id_path=PackedInt32Array(323946910) index="6" unique_id=1471469621]
+layout_mode = 0
+offset_left = 836.0
+offset_top = 273.0
+offset_right = 986.0
+offset_bottom = 523.0
+scale = Vector2(0.62666667, 0.62)
+texture = ExtResource("2_vrjre")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container/Player Deck Zone" index="0" unique_id=891292124]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Deck
+Zone"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Enemy Deck Zone" type="TextureRect" parent="Container" parent_id_path=PackedInt32Array(323946910) index="7" unique_id=1484673165]
+layout_mode = 0
+offset_left = 159.0
+offset_top = 37.00003
+offset_right = 309.0
+offset_bottom = 287.00003
+scale = Vector2(0.62666667, 0.62)
+texture = ExtResource("2_vrjre")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container/Enemy Deck Zone" index="0" unique_id=992516135]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Deck
+Zone"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Enemy Discard Zone" type="TextureRect" parent="Container" parent_id_path=PackedInt32Array(323946910) index="8" unique_id=269713657]
+layout_mode = 0
+offset_left = 834.0
+offset_top = 32.0
+offset_right = 984.0
+offset_bottom = 282.0
+scale = Vector2(0.62666667, 0.62)
+texture = ExtResource("2_vrjre")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container/Enemy Discard Zone" index="0" unique_id=1138430727]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Discard
+Zone"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Enemy Unit Zone" type="TextureRect" parent="Container" parent_id_path=PackedInt32Array(323946910) index="9" unique_id=1563544651]
+layout_mode = 0
+offset_left = 327.0
+offset_top = 32.0
+offset_right = 477.0
+offset_bottom = 282.0
+scale = Vector2(0.62666667, 0.62)
+texture = ExtResource("2_vrjre")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container/Enemy Unit Zone" index="0" unique_id=712609698]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Unit
+Zone"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Enemy Unit Zone2" type="TextureRect" parent="Container" parent_id_path=PackedInt32Array(323946910) index="10" unique_id=2099955923]
+layout_mode = 0
+offset_left = 433.0
+offset_top = 32.0
+offset_right = 583.0
+offset_bottom = 282.0
+scale = Vector2(0.62666667, 0.62)
+texture = ExtResource("3_2ylar")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container/Enemy Unit Zone2" index="0" unique_id=2064733099]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Unit
+Zone"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Enemy Unit Zone3" type="TextureRect" parent="Container" parent_id_path=PackedInt32Array(323946910) index="11" unique_id=1160764868]
+layout_mode = 0
+offset_left = 547.0
+offset_top = 30.0
+offset_right = 697.0
+offset_bottom = 280.0
+scale = Vector2(0.62666667, 0.62)
+texture = ExtResource("2_vrjre")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container/Enemy Unit Zone3" index="0" unique_id=1247966166]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Unit
+Zone"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Enemy Unit Zone4" type="TextureRect" parent="Container" parent_id_path=PackedInt32Array(323946910) index="12" unique_id=1585403878]
+layout_mode = 0
+offset_left = 659.0
+offset_top = 30.99997
+offset_right = 809.0
+offset_bottom = 280.99997
+scale = Vector2(0.62666667, 0.62)
+texture = ExtResource("2_vrjre")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Container/Enemy Unit Zone4" index="0" unique_id=358699764]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Unit
+Zone"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Player Hand" type="Control" parent="Container" parent_id_path=PackedInt32Array(323946910) index="13" unique_id=1711731736]
+anchors_preset = 0
+offset_left = 522.0
+offset_top = 622.0
+offset_right = 562.0
+offset_bottom = 662.0
+
+[node name="TextureButton" type="TextureButton" parent="Container/Player Hand" index="0" unique_id=1574551886 node_paths=PackedStringArray("player_unit_zone")]
+layout_mode = 0
+offset_left = -191.0
+offset_top = -132.0
+offset_right = 109.0
+offset_bottom = 312.0
+rotation = -0.5235988
+scale = Vector2(0.47, 0.47)
+texture_normal = ExtResource("4_2ylar")
+script = ExtResource("5_qgfnd")
+player_unit_zone = NodePath("../../Player Unit Zone")
+
+[node name="TextureButton2" type="TextureButton" parent="Container/Player Hand" index="1" unique_id=495345548 node_paths=PackedStringArray("player_unit_zone")]
+layout_mode = 0
+offset_left = -47.999996
+offset_top = -209.00002
+offset_right = 252.0
+offset_bottom = 231.99998
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("5_24kln")
+script = ExtResource("5_qgfnd")
+player_unit_zone = NodePath("../../Player Unit Zone2")
+
+[node name="TextureButton3" type="TextureButton" parent="Container/Player Hand" index="2" unique_id=430261566 node_paths=PackedStringArray("player_unit_zone")]
+layout_mode = 0
+offset_left = 131.0
+offset_top = -200.00002
+offset_right = 431.0
+offset_bottom = 240.99998
+rotation = 0.5235988
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("4_2ylar")
+script = ExtResource("5_qgfnd")
+player_unit_zone = NodePath("../../Player Unit Zone3")
+
+[node name="Label" type="Label" parent="Container" parent_id_path=PackedInt32Array(323946910) index="14" unique_id=1432881361]
+layout_mode = 0
+offset_left = 363.0
+offset_top = 219.0
+offset_right = 719.0
+offset_bottom = 242.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Click a Card in your hand to play it on the field"
+
+[connection signal="button_down" from="Container/Player Hand/TextureButton" to="Container/Player Hand/TextureButton" method="_on_button_down"]
+[connection signal="button_down" from="Container/Player Hand/TextureButton2" to="Container/Player Hand/TextureButton2" method="_on_button_down"]
+[connection signal="button_down" from="Container/Player Hand/TextureButton3" to="Container/Player Hand/TextureButton3" method="_on_button_down"]
