@@ -1,12 +1,12 @@
 name: Bug Report
 description: File a bug report.
 assignees:
-    HubGitterHere
-    ahdickinson
-    ashenpageau
-    fnegin9
-    humblebees1
+    - HubGitterHere
+    - ahdickinson
+    - ashenpageau
+    - fnegin9
+    - humblebees1
 body:
-    type: markdown
+    - type: markdown
     attributes:
         value: Thanks for reporting this issue and filing this bug report.
