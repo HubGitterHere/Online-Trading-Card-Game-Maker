@@ -18,7 +18,7 @@ body:
   attributes:
     label: Contact Details
     description: How can we contact you for more info?
-    placeholder: ex: email@example.com
+    placeholder: email@example.com
   validations:
     required: false
   -type: textarea
