@@ -8,5 +8,5 @@ assignees:
   -  humblebees1
 body:
   -  type: markdown
-      attributes:
-          value: Thanks for reporting this issue and filing this bug report.
+  attributes:
+    value: Thanks for reporting this issue and filing this bug report.
