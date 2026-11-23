@@ -52,12 +52,12 @@ body:
       -Microsoft Edge
   -type: checkboxes
   id: terms
-    attributes:
-      label: Code of Conduct
-      description: by submitting this issue, yo uagree to follow our [Code of Conduct]:https://example.com
-      option:
-        -label: I agree to follow this project's code of conduct
-        required: true
+  attributes:
+    label: Code of Conduct
+    description: by submitting this issue, yo uagree to follow our [Code of Conduct]:https://example.com
+    option:
+      -label: I agree to follow this project's code of conduct
+      required: true
   -type: upload
   id: screenshots
   attributes:
