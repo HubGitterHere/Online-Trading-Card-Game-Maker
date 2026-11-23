@@ -54,8 +54,8 @@ body:
   id: terms
   attributes:
     label: Code of Conduct
-    description: by submitting this issue, yo uagree to follow our [Code of Conduct]:https://example.com
-    option:
+    description: by submitting this issue, you agree to follow our [Code of Conduct] https://example.com
+    options:
       -label: I agree to follow this project's code of conduct
       required: true
   -type: upload
