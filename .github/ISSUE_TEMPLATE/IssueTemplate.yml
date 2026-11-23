@@ -7,6 +7,6 @@ assignees:
   -  fnegin9
   -  humblebees1
 body:
-  -type: markdown
+  type: markdown
   attributes:
     value: Thanks for reporting this issue and filing this bug report.
