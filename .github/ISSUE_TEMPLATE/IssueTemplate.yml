@@ -1,5 +1,5 @@
 # based off of code from
-#https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
+# https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
 name: Bug Report
 description: File a bug report.
 assignees:
