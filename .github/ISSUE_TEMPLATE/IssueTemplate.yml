@@ -1,2 +1,7 @@
 name: Bug Report
 description: File a bug report.
+body:
+  -type: markdown
+  attributes:
+    value: |
+      Thanks for reporting this issue and filing this bug report.
