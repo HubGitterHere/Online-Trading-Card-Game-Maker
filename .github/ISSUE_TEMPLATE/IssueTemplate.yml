@@ -10,3 +10,6 @@ body:
     - type: markdown
     attributes:
         value: Thanks for reporting this issue and filing this bug report.
+    - type: textarea
+    attributes:
+        label: "What's wrong?"
