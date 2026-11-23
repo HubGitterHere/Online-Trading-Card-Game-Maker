@@ -8,8 +8,8 @@ assignees:
     - humblebees1
 body:
     - type: markdown
-    attributes:
+      attributes:
         value: Thanks for reporting this issue and filing this bug report.
     - type: textarea
-    attributes:
+      attributes:
         label: "What's wrong?"
