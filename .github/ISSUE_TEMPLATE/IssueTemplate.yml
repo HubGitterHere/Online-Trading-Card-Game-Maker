@@ -9,4 +9,4 @@ assignees:
 body:
   -  type: markdown
       attributes:
-        value: Thanks for reporting this issue and filing this bug report.
+          value: Thanks for reporting this issue and filing this bug report.
