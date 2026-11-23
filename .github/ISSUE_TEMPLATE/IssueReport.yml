@@ -1,0 +1,68 @@
+#based off of code from:
+#https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labelts: ["bug", "triage"]
+projects: ["Online TCG Maker"]
+assignees:
+  -HugGitterHere
+  -ahdickinson
+  -ashenpageau
+  -fnegin9
+  -humblebees1
+type: bug
+body:
+  -type: input
+  id: contact
+  attributes:
+    label: Contact Details
+    description: How can we contact you for more info?
+    placeholder: ex: email@example.com
+  validations:
+    required: false
+  -type: textarea
+  id: what-happened
+  attributes:
+    label: What happened?
+    description: Also, tell us what you expected to happen?
+    placeholder: Tell use what you see!
+    value "A bug happened!"
+  validations:
+    required: true
+  -type: dropdown
+  id: version
+  attributes:
+    label: Version
+    description: What version of the Online TCG Maker are you running?
+    options:
+      - 1.0.0 (Default)
+    default: 0
+  validations:
+    required: true
+  -type: dropdown
+  id: browsers
+  attributes:
+    label: What browsers did you see the problem on?
+    multiple: true
+    options:
+      -Firefox
+      -Chrome
+      -Safari
+      -Microsoft Edge
+  -type: checkboxes
+  id: terms
+    attributes:
+      label: Code of Conduct
+      description: by submitting this issue, yo uagree to follow our [Code of Conduct)[https://example.com).
+      option:
+        -label: I agree to follow this project's code of conduct
+        required: true
+  -type: upload
+  id: screenshots
+  attributes:
+    label: Upload screenshots
+    description: If applicable, add screenshots to demonstrate your issue
+  validations:
+    required: false
+    
