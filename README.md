@@ -3,3 +3,5 @@ Data within includes pages for designing cards, designing games, playing games, 
 Alongside the script for giving those pages functionality.
 ## License
 Distributed under the MIT License. See 'LICENSE' for more information.
+## Architecture
+  to be added
